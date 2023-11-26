@@ -25,6 +25,13 @@ public class C01_SetupDriver {
 
         URL url = new URL("http://0.0.0.0:4723");
         AndroidDriver driver = new AndroidDriver(url, capabilities);
+
+        //tel kapali ise acmamiza yarar
+       // if (driver.isDeviceLocked()) {
+       //     driver.unlockDevice();
+       // }
+
+
     }
 
     @Test
